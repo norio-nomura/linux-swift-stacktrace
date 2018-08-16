@@ -1,0 +1,12 @@
+version: "3"
+services:
+  vapor:
+    build: ./vapor-image
+    image: vapor-image
+    container_name: "vapor"
+    volumes:
+      - ./crashapp:/var/vapor
+    ports:
+      - "8080:8080"
+    restart: always
+
