@@ -4,7 +4,7 @@ RUN apt-get update && \
     apt-get install -y wget && \
     /bin/bash -c "$(wget -qO- https://apt.vapor.sh)" && \
     apt-get update && \
-    apt-get install -y swift vapor
+    apt-get install -y swift=4.1.0 vapor
 
 WORKDIR /var/vapor
 EXPOSE 8080
