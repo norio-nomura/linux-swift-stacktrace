@@ -8,6 +8,7 @@ RUN apt-get update && \
     /bin/bash -c "$(cat apt.vapor.sh)" && \
     apt-get update && \
     apt-get install -y swift=4.1.0 vapor
+RUN apt-get install -y libpython2.7
 
 WORKDIR /var/vapor
 EXPOSE 8080
