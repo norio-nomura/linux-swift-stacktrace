@@ -8,5 +8,7 @@ services:
       - ./crashapp:/var/vapor
     ports:
       - "8080:8080"
+      - "31166-31266:31166-31266"
     restart: always
+    privileged: true
 
