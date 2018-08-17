@@ -13,7 +13,7 @@ homebrewでdocker-composeをインストールする。
 リポジトリルートで下記を実行。
 
 ```
-$ sudo docker-compose up
+$ sudo docker-compose up -d
 ```
 
 長い時間のあと、シェルが戻ってくるので、プロセスが起動している事を確認する。
